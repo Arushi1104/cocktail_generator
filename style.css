@@ -355,7 +355,7 @@ header p {
     margin-bottom: 1rem;
     background-color: rgba(10, 10, 15, 0.5);
     padding: 1rem;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 5% 100%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
     border-left: 2px solid var(--secondary-color);
 }
 
