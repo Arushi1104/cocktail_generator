@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cocktail Generator</h1>
+        <p>Discover amazing cocktail recipes!</p>
+    </header>
+
+    <div class="search-container">
+        <div class="search-by-name">
+            <h2>Search by Name</h2>
+            <div class="input-group">
+                <input type="text" id="cocktail-name" placeholder="Enter cocktail name...">
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+        
+        <div class="search-by-ingredient">
+            <h2>Filter by Ingredient</h2>
+            <div class="input-group">
+                <input type="text" id="ingredient-name" placeholder="Enter ingredient...">
+                <button id="filter-btn">Filter</button>
+            </div>
+        </div>
+        
+        <div class="random">
+            <h2>Try Your Luck</h2>
+            <button id="random-btn">Random Cocktail</button>
+        </div>
+    </div>
+
+    <div class="results-container">
+        <div id="cocktail-details" class="hidden">
+            <h2 id="cocktail-title"></h2>
+            <div class="cocktail-content">
+                <div class="cocktail-image">
+                    <img id="cocktail-img" src="" alt="Cocktail Image">
+                </div>
+                <div class="cocktail-info">
+                    <div class="category-glass">
+                        <p><strong>Category:</strong> <span id="category"></span></p>
+                        <p><strong>Glass:</strong> <span id="glass"></span></p>
+                        <p><strong>Alcoholic:</strong> <span id="alcoholic"></span></p>
+                    </div>
+                    <div class="ingredients">
+                        <h3>Ingredients</h3>
+                        <ul id="ingredients-list"></ul>
+                    </div>
+                    <div class="instructions">
+                        <h3>Instructions</h3>
+                        <p id="instructions"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="cocktails-grid" class="hidden">
+            <h2>Search Results</h2>
+            <div id="grid-items"></div>
+        </div>
+        
+        <div id="error-message" class="hidden">
+            <p>No cocktails found. Please try a different search term.</p>
+        </div>
+        
+        <div id="loading" class="hidden">
+            <div class="loader"></div>
+            <p>Finding your perfect cocktail...</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Powered by <a href="https://www.thecocktaildb.com/" target="_blank">TheCocktailDB</a> | &copy; 2025</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
